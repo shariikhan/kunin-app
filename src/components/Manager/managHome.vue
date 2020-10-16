@@ -1,0 +1,30 @@
+<template>
+    <div>
+      <section id="main">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="maincontent col-lg-9">
+                  <div class="tab-content mainContent">
+                    <router-view/>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      </div>
+</template>
+<script>
+import $ from 'jquery';
+ 
+export default {
+  
+   data(){
+      return{
+         name:"managerHomePage",
+      }
+   },
+   methods:{
+    
+   },
+}
+</script>
