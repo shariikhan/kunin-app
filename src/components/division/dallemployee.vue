@@ -76,7 +76,7 @@
                           </div>
                       </div>
                    <div class="employee-Table" style="display: block;">
-                          <div class="table-card-div">
+                          <div class="table-card-div allEmployee">
                             <div class="row">
                               <div class="col-lg-12">
                                 <div class="table-responsive">
@@ -90,20 +90,20 @@
                                             <th colspan="2">Assigned Time</th>
                                             <th colspan="2">Achieved Time</th>
                                             <th class="tooltipTd">High Focus (Time of Day)
-                                               <span class="infoIcon" @mouseleave="mouseLeave" @mouseover="mouseOver" style="left:54% !important;">
+                                               <span class="infoIcon" @mouseleave="mouseLeave" @mouseover="mouseOver">
                                               
                                                 <i class="fa fa-info-circle"></i>
                                              
                                                  </span>
                                                  <span class="tooltipData">Descriptor of what the column. The description will be available upon hover.</span>
                                             </th>
-                                         <th class="tooltipTdOne">High Focus (Duration) <span class="infoIcon" @mouseleave="mouseLeaveFirst" @mouseover="mouseOverFirst" style="left:66% !important;">
+                                         <th class="tooltipTdOne">High Focus (Duration) <span class="infoIcon" @mouseleave="mouseLeaveFirst" @mouseover="mouseOverFirst">
                                                 <i class="fa fa-info-circle"></i>
                                               
                                               </span>
                                                <span class="tooltipData">Descriptor of what the column. The description will be available upon hover.</span>
                                             </th>
-                                       <th class="tooltipTdTwo">Collective Focus Time <span class="infoIcon" @mouseleave="mouseLeaveSecond" @mouseover="mouseOverSecond" style="left:79% !important;">
+                                       <th class="tooltipTdTwo">Collective Focus Time <span class="infoIcon" @mouseleave="mouseLeaveSecond" @mouseover="mouseOverSecond">
                                               <i class="fa fa-info-circle"></i>
                                               </span>
                                               <span class="tooltipData">Descriptor of what the column. The description will be available upon hover.</span>

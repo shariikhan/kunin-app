@@ -377,14 +377,14 @@ if(($(".tooltipTdOne .tooltipData").css("display")=="block") || ($(".tooltipTd .
         // moment.utc().hours(h).minutes(m).format("hh:mm");
         //  return moment(mins, x'minutes').format('HH:mm');
       },
-      mouseOver(){
-       $(".tooltipTd .tooltipData").css("display","block");
+       mouseOver(){
+        $(".tooltipTd .tooltipData").css("display","block");
       },
       mouseLeave(){
         $(".tooltipTd .tooltipData").css("display","none");
       },
       mouseOverFirst(){
-       $(".tooltipTdOne .tooltipData").css("display","block");
+        $(".tooltipTdOne .tooltipData").css("display","block");
       },
       mouseLeaveFirst(){
         $(".tooltipTdOne .tooltipData").css("display","none");

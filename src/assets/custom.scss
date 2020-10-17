@@ -1615,7 +1615,7 @@ input:focus {
     font-size: 10px;
     position: absolute;
     top: 3px;
-    right: 15px;
+    right: 6px;
     color: gray;
     cursor: pointer;
 }
@@ -1921,23 +1921,14 @@ input:focus {
 .tooltipRow{
     position: relative;
 }
-.tooltipTd .infoIcon{
-    right: initial;
-    left: 51%;
-}
-.tooltipTdOne .infoIcon{
-    right: initial;
-    left: 61%;
-}
-.tooltipTdTwo .infoIcon{
-    right: initial;
-    left: 71%;
+.tooltipTdTwo,.tooltipTd,.tooltipOne,.tooltipTdOne{
+    position: relative; 
 }
 .tooltipRow .tooltipTd .tooltipData{
     z-index: 9999999;
     position: absolute;
     top: -59px;
-    right: 44%;
+    right: 0px;
     height: 68px;
     width: 169px;
     border-radius: 4px;
@@ -1950,7 +1941,7 @@ input:focus {
 .tooltipTdOne .tooltipData{
     position: absolute;
     top: -59px;
-    right: 32%;
+    right: 0px;
     height: 68px;
     width: 169px;
     border-radius: 4px;
@@ -1960,10 +1951,10 @@ input:focus {
     font-size: 12px;
     display: none;
 }
-.tooltipTdTwo .tooltipData{
+.tooltipData{
     position: absolute;
     top: -59px;
-    right: 23%;
+    right:0px;
     height: 68px;
     width: 169px;
     border-radius: 4px;
@@ -2013,8 +2004,66 @@ input:focus {
     top: -66px !important;
     right: 29% !important;
 }
-/************** Media-Query ************/
 
+/************** Media-Query ************/
+// @media only screen and (min-width: 1500px) {
+// .employeeDetailTable .tooltipTd .infoIcon{
+//     left: 58%;
+// }
+// .employeeDetailTable .positionChangedOne .infoIcon{
+//     left: 69%;
+// }
+// .employeeDetailTable .positionChangedTwo .infoIcon{
+//     left: 80%;
+// }
+// .divisionCredit .tooltipTdTwo .infoIcon{
+//     left: 65%;
+// }
+// .allEmployee .tooltipTd .infoIcon{
+//     left: 51%;
+// }
+// .allEmployee .tooltipTdOne .infoIcon {
+//     left: 62%;
+// }
+
+// }
+// @media only screen and (max-width: 1500px) {
+//     .divisionCredit .tooltipTdTwo .infoIcon{
+//         left: 73%;
+//     }
+// }
+// @media only screen and (max-width: 1300px) {
+//     .divisionCredit .tooltipTdTwo .infoIcon{
+//         left: 76%;
+//     }
+// }
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+ .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltop:hover .tooltiptext {
+    visibility: visible;
+  }
+  .table-responsive{
+      overflow: visible;
+  }
 @media only screen and (max-width: 1200px) {
     #manager .managerLabelText,
     #manager .table-div-credit-card {

@@ -86,7 +86,7 @@
         
         <div class="activity-Table">
             <chart-file></chart-file>
-            <div class="table-card-div">
+            <div class="table-card-div divisionCredit">
             <div class="row">
                 <div class="col-md-6" v-for="(data,i) in depart" :key="i" style="margin:15px;">
                     <h3>Manager: {{data.manager.first_name}} {{data.manager.last_name}} </h3> 
@@ -413,17 +413,12 @@ export default {
         
     },
     methods:{
-         mouseOver(){
-       $(".tooltipTd .tooltipData").css("display","block");
-      },
-      mouseLeave(){
-        $(".tooltipTd .tooltipData").css("display","none");
-      },
      mouseLeaveSecond(){
-        $(".tooltipTdTwo .tooltipData").css("display","none");
+         
+        $(".tooltipData").css("display","none");
       },
        mouseOverSecond(){
-       $(".tooltipTdTwo .tooltipData").css("display","block");
+       $(".tooltipData").css("display","block");
       },
         creditDropDown(){
       if($(".credit-card-drop-down").css("display")==="block"){
